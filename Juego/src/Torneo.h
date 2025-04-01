@@ -21,7 +21,7 @@ public:
     void registrarVideojuego(int codigo, string nombre, string genero, int dificultad);
     void registrarJugador(string nombreJugador, int nivel);
     void inscribirJugadorEnVideojuego();
-    void mostrarVideojuegosDeJugador();
+    void mostrarVideojuegosDeJugador(string name);
     Videojuego* buscarVideojuego(int codigo);
     Jugador* buscarJugador(string name);
 

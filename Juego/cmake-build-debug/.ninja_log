@@ -4,3 +4,8 @@
 70	3225	7652421493951454	CMakeFiles/Juego.dir/src/Torneo.cpp.obj	b5727b56858609d
 2822	4091	7652421521408555	CMakeFiles/Juego.dir/src/Jugador.cpp.obj	eab633283ecddf1e
 4091	4269	7652421534092740	Juego.exe	621a17df894bc3e6
+74	2880	7652520636027562	CMakeFiles/Juego.dir/src/Videojuego.cpp.obj	1e313fd242a5baf4
+111	3103	7652520636390810	CMakeFiles/Juego.dir/src/Jugador.cpp.obj	eab633283ecddf1e
+95	3356	7652520636227445	CMakeFiles/Juego.dir/src/Torneo.cpp.obj	b5727b56858609d
+6	1185	7652520860391156	CMakeFiles/Juego.dir/src/Torneo.cpp.obj	b5727b56858609d
+1186	1348	7652520872187004	Juego.exe	621a17df894bc3e6
