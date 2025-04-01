@@ -12,8 +12,8 @@
 using namespace std;
 class Torneo {
 private:
-    map<string, Videojuego*>videojuegos;
-    map<string, Jugador*>jugadores;
+    map<int, Videojuego*>videojuegos;
+    map<int , Jugador*>jugadores;
     void inicializarDatos();
 public:
     void registrarVideojuego();
@@ -22,6 +22,7 @@ public:
     void mostrarVideojuegosDeJugador();
     void inicializarVideojuegos();
     void inicializarJugadores();
+
 };
 
 
