@@ -15,12 +15,16 @@ class Jugador {
 private:
     string nickName;
     int nivel;
-    vector<Videojuego* > videoJuego;
+    vector<Videojuego* > videoJuegosIncritos;
 public:
+    Jugador() = default;
     Jugador(string, int);
     void mostrarJugador();
+    void agregrarVideoJuego(Videojuego* videojuego);
     string getNombreJugador();
-    void setNombreJugador();
+    void setNombreJugador(string);
+    int getNivel();
+    void setNivel(int nivel);
 
 };
 

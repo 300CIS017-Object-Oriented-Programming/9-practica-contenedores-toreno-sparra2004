@@ -10,11 +10,12 @@ Videojuego::Videojuego(int codigo, string nombre, string genero, int dificultad)
     this->dificultad = dificultad;
 }
 void Videojuego::mostrarInfo(){
-    cout <<"Video juego\n";
+    cout <<"Informacion del videojuego\n";
     cout << "Nombre del juego: " << getNombre();
     cout << "Codigo: " << getCodigo();
     cout << "Genero: "<< getGenero();
     cout << "Dificultad: " << getDificultad();
+    cout << endl;
 }
 
 int Videojuego::getCodigo(){

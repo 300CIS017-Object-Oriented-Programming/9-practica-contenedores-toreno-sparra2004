@@ -15,6 +15,7 @@ class Videojuego{
         string genero;
         int dificultad;
 public:
+    Videojuego() = default;
     Videojuego(int, string, string, int);
     void mostrarInfo();
 
