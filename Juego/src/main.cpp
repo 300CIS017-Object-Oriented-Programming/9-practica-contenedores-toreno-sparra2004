@@ -13,7 +13,7 @@ void menu(Torneo &torneo) {
                 "3. Mostrar videojuegos del jugador\n"
                 "4. Inscribir jugador al videojuego\n"
                 "5. Salir\n";
-        cout << "Opción: ";
+        cout << "Opcion: ";
         cin >> opc;
         cin.ignore();
 
@@ -67,7 +67,7 @@ void menu(Torneo &torneo) {
                 cout << "Saliendo...\n";
                 break;
             default:
-                cout << "Opción inválida. Intente de nuevo.\n";
+                cout << "Opción invalida. Intente de nuevo.\n";
         }
     } while (opc != 5);
 }
