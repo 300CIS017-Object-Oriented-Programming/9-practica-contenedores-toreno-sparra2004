@@ -16,7 +16,6 @@ void menu(Torneo &torneo) {
         cout << "Opcion: ";
         cin >> opc;
         cin.ignore();
-
         switch (opc) {
             case 1: {
                 cout << "\n=== Registrar videojuegos ===\n";
@@ -41,7 +40,7 @@ void menu(Torneo &torneo) {
                 getline(cin, name);
                 cout << "Escribe el nivel: ";
                 cin >> level;
-                cin.ignore(); // Limpia buffer después de cin >>
+                cin.ignore();
                 torneo.registrarJugador(name, level);
                 break;
             }
@@ -54,12 +53,6 @@ void menu(Torneo &torneo) {
                 break;
             }
             case 4: {
-                cout << "\n=== Inscribir videojuegos a jugadores ===\n";
-                string jugador, juego;
-                cout << "Ingrese el nickname del jugador: ";
-                getline(cin, jugador);
-                cout << "Ingrese el nombre del videojuego: ";
-                getline(cin, juego);
                 torneo.inscribirJugadorEnVideojuego();
                 break;
             }
