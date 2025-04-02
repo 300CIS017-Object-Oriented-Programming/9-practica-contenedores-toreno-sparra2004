@@ -1,6 +1,76 @@
 #include <iostream>
 #include "Torneo.h"
+#include <string>
+
+using namespace std;
+
+void menu(Torneo &torneo) {
+    int opc;
+    do {
+        cout << "\n=== Menu ===\n";
+        cout << "1. Registrar videojuego\n"
+                "2. Registrar jugadores\n"
+                "3. Mostrar videojuegos del jugador\n"
+                "4. Inscribir jugador al videojuego\n"
+                "5. Salir\n";
+        cout << "Opción: ";
+        cin >> opc;
+        cin.ignore(); // Evita problemas con getline después de cin >>
+
+        switch (opc) {
+            case 1: {
+                cout << "\n=== Registrar videojuegos ===\n";
+                string nombreJuego;
+                int code;
+                cout << "Ingrese el nombre del videojuego: ";
+                getline(cin, nombreJuego);
+                cout << "Ingrese el codigo: ";
+                cin >> code;
+
+                torneo.registrarVideojuego(nombreJuego);
+                break;
+            }
+            case 2: {
+                cout << "\n=== Registrar Jugadores ===\n";
+                string name;
+                int level;
+                cout << "Escribe el nickname: ";
+                getline(cin, name);
+                cout << "Escribe el nivel: ";
+                cin >> level;
+                cin.ignore(); // Limpia buffer después de cin >>
+                torneo.registrarJugador(name, level);
+                break;
+            }
+            case 3: {
+                cout << "\n=== Mostrar videojuegos de jugadores ===\n";
+                string jugador;
+                cout << "Ingrese el nickname del jugador: ";
+                getline(cin, jugador);
+                torneo.mostrarVideojuegosDeJugador(jugador);
+                break;
+            }
+            case 4: {
+                cout << "\n=== Inscribir videojuegos a jugadores ===\n";
+                string jugador, juego;
+                cout << "Ingrese el nickname del jugador: ";
+                getline(cin, jugador);
+                cout << "Ingrese el nombre del videojuego: ";
+                getline(cin, juego);
+                torneo.inscribirJugadorEnVideojuego();
+                break;
+            }
+            case 5:
+                cout << "Saliendo...\n";
+                break;
+            default:
+                cout << "Opción inválida. Intente de nuevo.\n";
+        }
+    } while (opc != 5);
+}
 
 int main() {
-
+    Torneo torneo; // Se crea una instancia de Torneo
+    menu(torneo);  // Se pasa la referencia al menú
+    return 0;
 }

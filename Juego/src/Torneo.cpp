@@ -53,9 +53,6 @@ void Torneo::inicializarDatos() {
     v3->setNombre("Minecraft");
     v3->setGenero("Sandbox");
     v3->setDificultad(2);
-
-    j1->mostrarJugador();
-
  }
 
 void Torneo::registrarVideojuego(int codigo, string nombre, string genero, int dificultad){
