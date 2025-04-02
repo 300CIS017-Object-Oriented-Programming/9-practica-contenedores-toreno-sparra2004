@@ -49,11 +49,11 @@ cmake_ninja_workdir = C$:/GIT/9-practica-contenedores-toreno-sparra2004/Juego/cm
 
 build cmake_object_order_depends_target_Juego: phony || .
 
-build CMakeFiles/Juego.dir/main.cpp.obj: CXX_COMPILER__Juego_unscanned_Debug C$:/GIT/9-practica-contenedores-toreno-sparra2004/Juego/main.cpp || cmake_object_order_depends_target_Juego
-  DEP_FILE = CMakeFiles\Juego.dir\main.cpp.obj.d
+build CMakeFiles/Juego.dir/src/main.cpp.obj: CXX_COMPILER__Juego_unscanned_Debug C$:/GIT/9-practica-contenedores-toreno-sparra2004/Juego/src/main.cpp || cmake_object_order_depends_target_Juego
+  DEP_FILE = CMakeFiles\Juego.dir\src\main.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\Juego.dir
-  OBJECT_FILE_DIR = CMakeFiles\Juego.dir
+  OBJECT_FILE_DIR = CMakeFiles\Juego.dir\src
 
 build CMakeFiles/Juego.dir/src/Videojuego.cpp.obj: CXX_COMPILER__Juego_unscanned_Debug C$:/GIT/9-practica-contenedores-toreno-sparra2004/Juego/src/Videojuego.cpp || cmake_object_order_depends_target_Juego
   DEP_FILE = CMakeFiles\Juego.dir\src\Videojuego.cpp.obj.d
@@ -81,7 +81,7 @@ build CMakeFiles/Juego.dir/src/Jugador.cpp.obj: CXX_COMPILER__Juego_unscanned_De
 #############################################
 # Link the executable Juego.exe
 
-build Juego.exe: CXX_EXECUTABLE_LINKER__Juego_Debug CMakeFiles/Juego.dir/main.cpp.obj CMakeFiles/Juego.dir/src/Videojuego.cpp.obj CMakeFiles/Juego.dir/src/Torneo.cpp.obj CMakeFiles/Juego.dir/src/Jugador.cpp.obj
+build Juego.exe: CXX_EXECUTABLE_LINKER__Juego_Debug CMakeFiles/Juego.dir/src/main.cpp.obj CMakeFiles/Juego.dir/src/Videojuego.cpp.obj CMakeFiles/Juego.dir/src/Torneo.cpp.obj CMakeFiles/Juego.dir/src/Jugador.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Juego.dir

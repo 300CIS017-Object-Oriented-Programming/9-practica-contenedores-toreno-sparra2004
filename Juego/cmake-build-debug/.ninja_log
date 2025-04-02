@@ -1,11 +1,9 @@
 # ninja log v6
 29	2815	7652421493481101	CMakeFiles/Juego.dir/main.cpp.obj	f7359ca05c839202
-54	2857	7652421493741013	CMakeFiles/Juego.dir/src/Videojuego.cpp.obj	1e313fd242a5baf4
-70	3225	7652421493951454	CMakeFiles/Juego.dir/src/Torneo.cpp.obj	b5727b56858609d
-2822	4091	7652421521408555	CMakeFiles/Juego.dir/src/Jugador.cpp.obj	eab633283ecddf1e
-4091	4269	7652421534092740	Juego.exe	621a17df894bc3e6
+2466	2766	7652584389977305	Juego.exe	621a17df894bc3e6
 74	2880	7652520636027562	CMakeFiles/Juego.dir/src/Videojuego.cpp.obj	1e313fd242a5baf4
-111	3103	7652520636390810	CMakeFiles/Juego.dir/src/Jugador.cpp.obj	eab633283ecddf1e
-95	3356	7652520636227445	CMakeFiles/Juego.dir/src/Torneo.cpp.obj	b5727b56858609d
-6	1185	7652520860391156	CMakeFiles/Juego.dir/src/Torneo.cpp.obj	b5727b56858609d
-1186	1348	7652520872187004	Juego.exe	621a17df894bc3e6
+10	2464	7652584365410552	CMakeFiles/Juego.dir/src/Torneo.cpp.obj	b5727b56858609d
+58	2440	7652569119513377	CMakeFiles/Juego.dir/src/Jugador.cpp.obj	eab633283ecddf1e
+3	502	7652587353759244	build.ninja	1b726980020a93fc
+8	1889	7652587354528343	CMakeFiles/Juego.dir/src/main.cpp.obj	d86a2f0e28cb2c59
+1890	2173	7652587373344949	Juego.exe	377284a07861439a

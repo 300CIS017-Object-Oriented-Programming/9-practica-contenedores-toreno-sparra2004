@@ -3,7 +3,7 @@ project(Juego)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(Juego main.cpp
+add_executable(Juego src/main.cpp
         src/Videojuego.cpp
         src/Videojuego.h
         src/Torneo.cpp
