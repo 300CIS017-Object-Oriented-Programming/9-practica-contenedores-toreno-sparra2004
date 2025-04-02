@@ -2,5 +2,5 @@
 #include "Torneo.h"
 
 int main() {
- 
+
 }
